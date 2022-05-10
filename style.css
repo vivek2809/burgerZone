@@ -1,0 +1,630 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo', sans-serif;
+}
+
+#header{
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(255, 255, 255, 0));
+    height: 150px;
+    opacity: 1;
+}
+
+.navbar{
+    align-items: center;
+    padding: 20px 0 !important;
+}
+
+.navbar img{
+    height: 50px;
+}
+
+.navbar ul{
+    display: flex;
+    margin: 0;
+}
+
+.navbar li{
+    list-style: none;
+    margin: 0px 10px;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: white;   
+    padding: 5px 12px;
+}
+
+#hamburger{
+    cursor: pointer;
+    color: white;
+    display: none;
+}
+
+.responsive{
+    display: block !important;
+    position: fixed;
+    top: 80px;
+    left: 3%;
+    background-color: rgba(255, 255, 255, 0.936);
+    width:94%;
+    text-align: center;
+    padding: 0;
+}
+
+.responsive.nav-item li{
+    margin: 20px 0;
+}
+
+.responsive.nav-item li a{
+    font-weight: 600;
+}
+
+.hero{
+    min-height: 600px;
+    background-image: url(./Images/Home.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.offer-box {
+    position: absolute;
+    width: 40%;
+    top: 150px;
+    left: 30px;
+    margin-left: 1.5rem;
+
+}
+
+.offer-box h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+
+}
+
+.offer-box p {
+    margin-top: 20px;
+}
+
+
+.order-btn{
+    border-radius: 20px !important;
+    margin-top: 10px;
+    width: 200px;
+}
+
+.chef-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height:600px;
+    background-color: rgb(255, 237, 211);
+    padding: 70px;
+    color:#c03500d1;
+}
+
+.chef-head{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.chef-head h1{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.chef-about{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.chef-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height:300px;
+}
+
+.chef-card img{
+    width: 90%;
+}
+
+.chef-card h2{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.chef-card span{
+    font-weight: 500;
+}
+
+.burger-section{
+    display: flex;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    background-color: #c03500d1;
+    color: white;
+}
+
+.burger-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:50%;
+}
+
+.burger-image img{
+    width: 70%;
+}
+
+.burger-about{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.burger-about h1{
+    font-size: 2rem !important;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.burger-about p{
+    width: 80%;
+}
+
+.big-burger-section{
+    display: flex;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(255, 237, 211);
+    color: #c03500d1;
+}
+
+.big-burger{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.statistics{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height:600px;
+    background-color: #c03500d1;
+    padding: 70px;
+    color:white;
+    letter-spacing: 2px;
+}
+
+.stat-head{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.stat-head h1{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.stat-about{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.stat-card{
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 700 !important;
+    letter-spacing: 0px;
+}
+
+.stat-card h1{
+    font-size: 5rem !important;
+}
+
+.packages{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around !important;
+    height: 600px;
+    background-color:rgb(255, 237, 211);
+    color: #c03500d1;
+    align-items: center;
+}
+.packages h2{
+    font-size: 3rem;
+    font-weight: 700;
+    display: block;
+    padding: 50px;
+}
+.packages-about{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+.package-card{
+    width:250px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+.package-card h1{
+    font-size: 1.5rem;
+    font-weight: 700 !important;
+    letter-spacing: 2px;
+}
+
+.package-card span{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.package-card img{
+    width: 70px;
+}
+
+.pack-btn{
+    margin: 0;
+}
+
+.henderson{
+    height: 600px;
+    background-image: url(./Images/banner.png);
+    background-size: cover;
+    padding: 0 !important;
+    color: white;
+    
+}
+
+.over{
+    height: 600px;
+    background-color: #c03500d1;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hend-txt{
+    width: 40%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.update{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color: rgb(255, 237, 211);
+    color: #c03500d1;
+}
+
+.update-data{
+    width: 50%;
+    text-align: center;
+}
+
+.update-data h1{
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.update-data p{
+    padding: 20px;
+}
+#search{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.search{
+    width: 80%;
+}
+.sub-btn{
+    background-color: #c03500d1;
+    color: white;
+    border: none;
+    padding:10px 10px;
+    border-radius: 0px 20px 20px 0px;
+    right: 0;
+}
+
+footer{
+    display: flex;
+    align-items: top;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+    min-height: 300px;
+    background-color: rgba(0, 0, 0, 0.858);
+    color: white;
+    list-style: none;
+}
+
+footer h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.social-icon li{
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.first{
+    width: 35%;
+    margin: 20px;
+}
+
+
+/*  for responsive   */
+
+@media screen and (max-width:768px) {
+
+    /* for responsive */
+    #hamburger{
+        display: block;
+    }
+
+    .navbar ul{
+        display: none;
+    }
+    .navbar ul a{
+        color: black;
+    }
+
+    /* for offer box */
+    .offer-box{
+        width: 60%;
+        margin: auto;
+    }
+
+    .over-banner{
+        height: 150px;
+    }
+
+    /* for chef section  */
+
+    .chef-card{
+        min-height: 260px;
+    }
+
+    .chef-card img{
+        width: 70%;
+    }
+
+    .chef-card h2{
+        font-size: 1.2rem;
+        margin-bottom: 0px;
+    }
+
+    /* for burger section  */
+
+    .burger-section,.big-burger-section{
+        height: 500px;
+    }
+
+
+    /* for packages */
+
+    .packages{
+        height: auto;
+    }
+
+    .packages-about{
+        flex-direction: column;
+        width: auto;
+    }
+    .package-card{
+        margin-bottom: 30px;
+    }
+
+    /* for statistics  */
+
+    .stat-card{
+        width: 200px;
+        height: 200px;
+    }
+
+    .stat-card h1{
+        font-size: 3rem !important;
+    }
+
+    /* for henderson  */
+
+    .hend-txt{
+        width: 60%;
+    }
+
+    /* for update  */
+
+    .update {
+        height: 500px;
+    }
+
+    .update-data {
+        width: 60%;
+    }
+
+    .update-data h1 {
+        font-size: 2.5rem;
+    }
+
+    .search {
+        width:auto;
+    }
+
+    #search {
+        padding: 6px 15px;
+    }
+
+    .sub-btn {
+        padding: 6px 15px;
+    }
+
+    /* for footer */
+    footer{
+        padding: 20px;
+        height: auto;
+    }
+
+    .first{
+        width:100%;
+    }
+}
+
+@media screen and (max-width:426px) {
+
+    /* for offer-box */
+    .offer-box{
+        width: 80%;
+    }
+
+    .offer-box h1{
+        font-size: 2.5rem;
+    }
+
+    /* for packages */
+
+    .packages h2{
+        font-size: 2rem;
+        padding: 20px;
+    }
+
+    /* for chef */
+    .chef-section{
+        height: auto;
+    }
+
+    .chef-about{
+        flex-direction: column;
+    }
+
+    /* for burger section  */
+
+    .burger-section{
+        flex-direction: column;
+        height: auto;
+        padding: 30px;
+    }
+
+    .burger-image{
+        width: auto;
+        padding: 20px 0px;
+    }
+    
+    .burger-about{
+        width:90%;
+        margin-top: 20px;
+        align-items: center;
+    }
+
+    .big-burger-section{
+        flex-direction: column;
+        height: auto;
+        padding:20px 10px;
+    }
+
+    .big-burger{
+        width: auto;
+        margin: 20px auto;
+    }
+
+    /* for statistics  */
+
+    .statistics{
+        height: auto;
+    }
+
+    .stat-about{
+        flex-direction: column;
+    }
+
+    .stat-card{
+        margin: 20px;
+    }
+
+    .stat-head{
+        width: 75%;
+    }
+
+    /* for henderson */
+
+    .hend-txt{
+        width: 75%;
+    }
+
+    /* for update  */
+
+    .update-data{
+        width: auto;
+    }
+
+    .update-data h1{
+        font-size: 2rem;
+    }
+
+    .search{
+        width: 90%;
+    }
+
+    #search{
+        padding: 6px 15px;
+    }
+
+    .sub-btn{
+        padding: 6px 15px;
+    }
+
+    .social-icon li{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
