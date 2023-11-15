@@ -1,9 +1,9 @@
 
-const toggle =()=>{
+const toggle = () => {
     let hamburger = document.getElementById('hamburger');
-    if (hamburger.className === 'fa-solid fa-bars fa-xl'){
+    if (hamburger.className === 'fa-solid fa-bars fa-xl') {
         hamburger.className = 'fa-solid fa-xmark fa-xl';
-    }else{
+    } else {
         hamburger.className = 'fa-solid fa-bars fa-xl';
     }
 
@@ -15,4 +15,21 @@ const toggle =()=>{
         mobileNav.className = 'nav-item';
     }
 
+}
+
+let scrollTopButton = document.getElementById("scrollTop")
+
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollTopButton.style.display = "block";
+    } else {
+        scrollTopButton.style.display = "none";
+    }
+}
+
+const backToTopFun = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
